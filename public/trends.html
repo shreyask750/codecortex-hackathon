@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chiller Load Trends</title>
+</head>
+
+<style>
+    /* General body and background styling */
+.trends-body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #001F3F;
+    padding: 10px;
+    text-align: left;
+}
+
+.home-button {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.home-button:hover {
+    text-decoration: underline;
+}
+
+/* Title section styling */
+.trends-title {
+    text-align: center;
+    padding: 20px;
+}
+
+.trends-title h1 {
+    font-size: 36px;
+    color: #001F3F;
+}
+
+.trends-title p {
+    font-size: 18px;
+    color: #3A6D8C;
+}
+
+/* Image container styling */
+.plot-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;  /* Adds space between images */
+    padding: 20px;
+}
+
+/* Specific styling for each image */
+.chiller-trends-image, .plot2, .avgload, .avgtemperature, .avghumidity {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Adds a slight shadow */
+    border-radius: 10px;  /* Rounded corners */
+    transition: transform 0.3s ease;  /* Adds a smooth hover effect */
+}
+
+/* Hover effect */
+.image-1:hover, .image-2:hover, .image-3:hover, .image-4:hover, .image-5:hover {
+    transform: scale(1.05);  /* Scale up the image slightly on hover */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .plot-container {
+        flex-direction: column;  /* Stack images vertically on smaller screens */
+        align-items: center;
+    }
+}
+
+</style>
+<body class="trends-body">
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="navbar">
+            <!--<h2>Cool Solutions - Trends</h2>-->
+            <a href="index.html" class="home-button">Home</a>
+        </div>
+    </nav>
+
+    <!-- Title Section -->
+    <div class="trends-title">
+        <h1>Chiller Load Trends Over Different Months</h1>
+        <p>Explore how different factors such as Ambient Temperature, Relative Humidity, and Wet Bulb Temperature affect the Chiller Load during different months.</p>
+    </div>
+
+    <!-- Plot Section -->
+    <div class="plot-container">
+        <img src="C:\College\Code Cortex\chiller_plots.png" alt="Chiller Load Trends" class="chiller-trends-image">
+        <img src="C:\College\Code Cortex\plot2.png" alt="Chiller Load Trends" class="plot2">
+        <img src="C:\College\Code Cortex\avg_load.png" alt="Chiller Load Trends" class="avgload">
+        <img src="C:\College\Code Cortex\avg_temperature.png" alt="Chiller Load Trends" class="avgtemperature">
+        <img src="C:\College\Code Cortex\avg_humidity.png" alt="Chiller Load Trends" class="avghumidity">
+    </div>
+
+</body>
+</html>
